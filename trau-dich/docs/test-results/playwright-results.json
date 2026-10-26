@@ -1,0 +1,544 @@
+{
+  "date": "2026-10-26",
+  "playwright": "1.62.1",
+  "browser": "Chromium 153.0.8010.0",
+  "engine_package": "@sparticuz/chromium 153.0.0",
+  "stats": {
+    "startTime": "2026-10-26T16:54:23.297Z",
+    "duration": 37450.324,
+    "expected": 48,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "name": "Budget 1: Sehr wahrscheinlich is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2686
+        }
+      ]
+    },
+    {
+      "name": "Budget 1: Eher ja is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2188
+        }
+      ]
+    },
+    {
+      "name": "Budget 1: Eher nein is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2440
+        }
+      ]
+    },
+    {
+      "name": "Budget 1: Nein is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2417
+        }
+      ]
+    },
+    {
+      "name": "Budget 2: Sehr wahrscheinlich is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2187
+        }
+      ]
+    },
+    {
+      "name": "Budget 2: Eher ja is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2111
+        }
+      ]
+    },
+    {
+      "name": "Budget 2: Eher nein is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2464
+        }
+      ]
+    },
+    {
+      "name": "Budget 2: Nein is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2080
+        }
+      ]
+    },
+    {
+      "name": "Budget 3: Sehr wahrscheinlich is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2054
+        }
+      ]
+    },
+    {
+      "name": "Budget 3: Eher ja is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1941
+        }
+      ]
+    },
+    {
+      "name": "Budget 3: Eher nein is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2197
+        }
+      ]
+    },
+    {
+      "name": "Budget 3: Nein is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2539
+        }
+      ]
+    },
+    {
+      "name": "Budget 4: Sehr wahrscheinlich is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2115
+        }
+      ]
+    },
+    {
+      "name": "Budget 4: Eher ja is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2275
+        }
+      ]
+    },
+    {
+      "name": "Budget 4: Eher nein is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2270
+        }
+      ]
+    },
+    {
+      "name": "Budget 4: Nein is preserved across arbitrary changes",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2032
+        }
+      ]
+    },
+    {
+      "name": "Independent answers can be changed and are mapped to the exact POST fields",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2696
+        }
+      ]
+    },
+    {
+      "name": "Missing budget 1 blocks submission and focuses the answer",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2534
+        }
+      ]
+    },
+    {
+      "name": "Missing budget 2 blocks submission and focuses the answer",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2450
+        }
+      ]
+    },
+    {
+      "name": "Missing budget 3 blocks submission and focuses the answer",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2581
+        }
+      ]
+    },
+    {
+      "name": "Missing budget 4 blocks submission and focuses the answer",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2593
+        }
+      ]
+    },
+    {
+      "name": "Slow response shows pending state, locks input, and suppresses repeated submissions",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2684
+        }
+      ]
+    },
+    {
+      "name": "Network failure is retryable without losing the answers",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2767
+        }
+      ]
+    },
+    {
+      "name": "Server failure 403 never shows success",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 3112
+        }
+      ]
+    },
+    {
+      "name": "Server failure 422 never shows success",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2660
+        }
+      ]
+    },
+    {
+      "name": "Server failure 429 never shows success",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2674
+        }
+      ]
+    },
+    {
+      "name": "Server failure 500 never shows success",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2781
+        }
+      ]
+    },
+    {
+      "name": "Malformed successful response does not trigger the thank-you panel",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2915
+        }
+      ]
+    },
+    {
+      "name": "Native range keyboard, Home and End, and radio keyboard interaction",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1920
+        }
+      ]
+    },
+    {
+      "name": "Slider supports real mouse dragging",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1903
+        }
+      ]
+    },
+    {
+      "name": "Touch selection and slider tapping at phone size",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2987
+        }
+      ]
+    },
+    {
+      "name": "Layout 320×568: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1219
+        }
+      ]
+    },
+    {
+      "name": "Layout 360×800: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1132
+        }
+      ]
+    },
+    {
+      "name": "Layout 390×844: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 990
+        }
+      ]
+    },
+    {
+      "name": "Layout 430×932: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1154
+        }
+      ]
+    },
+    {
+      "name": "Layout 680×900: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1318
+        }
+      ]
+    },
+    {
+      "name": "Layout 768×1024: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1569
+        }
+      ]
+    },
+    {
+      "name": "Layout 820×1180: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1529
+        }
+      ]
+    },
+    {
+      "name": "Layout 1024×768: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1693
+        }
+      ]
+    },
+    {
+      "name": "Layout 1280×720: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1637
+        }
+      ]
+    },
+    {
+      "name": "Layout 1440×900: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2147
+        }
+      ]
+    },
+    {
+      "name": "Layout 1920×1080: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2779
+        }
+      ]
+    },
+    {
+      "name": "Layout 2560×1080: no horizontal overflow, controls remain reachable",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 3083
+        }
+      ]
+    },
+    {
+      "name": "Camera eases between levels; motion can be paused",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 3475
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion removes camera tweening and ambient animations",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1648
+        }
+      ]
+    },
+    {
+      "name": "Info dialog supports Escape and returns focus",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1407
+        }
+      ]
+    },
+    {
+      "name": "A repository subpath resolves all assets and modules",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 2416
+        }
+      ]
+    },
+    {
+      "name": "No cookies, localStorage, or sessionStorage are written",
+      "project": "chromium",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1881
+        }
+      ]
+    }
+  ]
+}

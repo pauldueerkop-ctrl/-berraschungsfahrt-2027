@@ -1,0 +1,21 @@
+{
+  "name": "trau-dich-2027",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Eine illustrierte, anonyme Budgetumfrage für die Überraschungsfahrt 2027.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "test:all": "npm test && npm run test:e2e",
+    "check": "node scripts/check.mjs",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
