@@ -1,16 +1,16 @@
 # Testbericht · Trau dich! 2027
 
-**Prüfdatum: 26. Oktober 2026.** Die folgenden Prüfungen wurden tatsächlich ausgeführt. Alle Übermittlungen waren simuliert; der echte Formspree-Endpunkt wurde nicht mit Testantworten beschickt.
+**Prüfdatum: 26. Oktober 2026 · Comic-Revision.** Die folgenden Prüfungen wurden tatsächlich ausgeführt. Alle Übermittlungen waren simuliert; der echte Formspree-Endpunkt wurde nicht mit Testantworten beschickt.
 
 | Bereich | Ergebnis | Umgebung |
 | --- | --- | --- |
 | Logik- und Übermittlungstests | **292 bestanden, 0 fehlgeschlagen** | Node.js 24.22.1, integrierter Test-Runner |
 | Browser-Integration | **62 bestanden, 0 fehlgeschlagen** | verfügbarer Chrome-Browser 155, isolierte Testfenster |
-| Playwright-End-to-End | **48 bestanden, 0 fehlgeschlagen** | Playwright 1.62.1, Chromium 153.0.8010.0 |
+| Playwright-End-to-End | **49 bestanden, 0 fehlgeschlagen** | Playwright 1.62.1, Chromium 153.0.8010.0 |
 | Asset-/Deployment-Prüfung | **bestanden** | Relative Pfade, vorhandene Dateien, Sprach-/Viewport-Metadaten |
 | Visuelle Kontrolle | **Desktop, Laptop, Tablet und Smartphone geprüft** | Screenshots im Ordner `screenshots/` |
 
-**Insgesamt 402 erfolgreiche Testfälle.** Mehrfachdurchläufe sind in dieser Zahl nicht mehrfach gezählt. Die Tests ergänzen sich, enthalten aber auch bewusste Überschneidungen zwischen Logik- und Browserprüfung.
+**Insgesamt 403 erfolgreiche Testfälle.** Nach einer abschließenden Tablet-Abstandskorrektur wurden die zwölf Layoutprüfungen und der neue Animationstest zusätzlich wiederholt: **13/13 bestanden**. Mehrfachdurchläufe sind in der Gesamtzahl nicht mehrfach gezählt. Die Tests ergänzen sich, enthalten aber auch bewusste Überschneidungen zwischen Logik- und Browserprüfung.
 
 ## Was geprüft wurde
 
@@ -39,6 +39,9 @@
 - Echter Mouse-Drag auf dem Range-Input und emulierte Touch-Eingaben bei 390 × 844 Pixeln.
 - Dialog öffnen, Escape schließen, Fokus zurück zum Auslöser.
 - Weiche Kamerafahrt, schnelles Wechseln während der Animation, Pause/Fortsetzen.
+- Mehr als Faktor 3,5 zwischen erster und letzter Zoomstufe; gemessen sind 3,84.
+- Dynamische Kondensstreifen, regelmäßig sichtbare Hupzeichen und gemeinsam mit den Fahrzeugen eingefrorene Effekte beim Pausieren.
+- Auch in der weitesten Ansicht ausreichend große Fahrzeuggrafiken auf Desktop und Smartphone.
 - `prefers-reduced-motion` einschließlich CSS-Animationen und direkter Kameraposition im emulierten Browser.
 - Kein horizontaler Überlauf und erreichbare Bedienelemente bei diesen Größen:
 
@@ -54,7 +57,11 @@
 
 ## Visuelle Korrekturen aus der Prüfung
 
-Behoben wurden ein kleiner Desktop-Überlauf, ein fehlender Wortabstand beim mobilen Umbruch und eine Überlagerung von Landschaft und Bedienung auf dem Tablet. Eine zusätzliche Beschriftung in der Landschaft wurde zugunsten des klaren München-Markers entfernt. Die Playwright-Suite wurde nach den Layoutkorrekturen vollständig erneut ausgeführt; **48/48 bestanden**.
+Die Landschaft wurde durch die kräftig konturierte Comicgrafik ersetzt. Der München-Marker sitzt am zentralen Brunnen. Zwei kurze Routen halten Bus und Auto auch in der ersten Ansicht sichtbar; weiter entfernte Routen kommen mit den Budgetstufen hinzu. Auf Tablets wurde der Abstand zur Formularspalte nach der visuellen Kontrolle vergrößert.
+
+Der zusätzliche Browser-Runner meldete anfangs 60/62 erfolgreiche Prüfungen: Zwei Animationstests verwendeten starre Wartezeiten und konnten die verzögerte Aktivierung eines eingebetteten Testfensters als Fehler werten. Der Runner stellt das Fenster jetzt wieder sichtbar und wartet auf einen tatsächlichen Bewegungsbeginn. Die vollständige Wiederholung ergab **62/62 bestanden**. Die Sichtbarkeitspause der eigentlichen Website bleibt aktiv.
+
+Ein Vergleich mit der ursprünglichen ZIP bestätigte identische sichtbare Website-Texte sowie byteidentische Dateien `js/app.js`, `js/survey.js` und `js/submit.js`.
 
 Die sieben aktuellen Screenshots zeigen alle vier Budgetansichten am Desktop sowie Smartphone, Tablet und Laptop. Erzeugen mit `npm run screenshots` nach `npm ci` und Installation des Playwright-Chromium-Browsers. Die Screenshot-Automatisierung blockiert ebenfalls alle externen Netzwerkziele.
 
@@ -70,6 +77,6 @@ Die tatsächliche Aktivierung und Spam-Konfiguration des konkreten Formspree-For
 
 - `test-results/unit-tests.txt`: tatsächliche Ausgabe der 292 Node-Tests.
 - `test-results/browser-results.json`: direkt aus dem ausgeführten Browser-Testlauf exportierter Bericht.
-- `test-results/playwright-results.json`: Testnamen, Status, Laufzeiten und Statistik aus dem letzten Playwright-Lauf, ohne umgebungsspezifische absolute Pfade.
+- `test-results/playwright-results.json`: Testnamen, Status, Laufzeiten und Statistik des abschließenden gezielten Playwright-Laufs mit 13 Layout-/Animationsprüfungen, ohne umgebungsspezifische absolute Pfade. Der davor ausgeführte vollständige Lauf bestand mit 49/49.
 - `../tests/`: sämtliche Tests und der unabhängige Browser-Runner.
 - `../README.md`: kurze Ausführungs- und Deployment-Anleitung.

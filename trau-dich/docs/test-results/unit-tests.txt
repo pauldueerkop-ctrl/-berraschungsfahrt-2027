@@ -1,300 +1,1762 @@
-✔ POST sends only the requested anonymous fields as JSON; cookies omitted (6.152886ms)
-✔ HTTP 400: rejects without retries (0.670931ms)
-✔ HTTP 401: rejects without retries (0.295445ms)
-✔ HTTP 403: rejects without retries (0.742429ms)
-✔ HTTP 404: rejects without retries (0.344649ms)
-✔ HTTP 422: rejects without retries (0.208073ms)
-✔ HTTP 429: rejects without retries (0.25889ms)
-✔ HTTP 500: rejects without retries (0.292771ms)
-✔ HTTP 503: rejects without retries (0.341805ms)
-✔ Network error preserves a helpful German error (0.830291ms)
-✔ Unconfirmed response <!doctype html>Not JSON: cannot become success (1.495514ms)
-✔ Unconfirmed response : cannot become success (0.546984ms)
-✔ Unconfirmed response null: cannot become success (0.325501ms)
-✔ Unconfirmed response {"ok":false}: cannot become success (0.302676ms)
-✔ Unconfirmed response {"errors":[{"message":"rejecte: cannot become success (0.247563ms)
-✔ Timeout aborts the request and warns about uncertain delivery; no automatic retry (8.904708ms)
-✔ Slow request resolves only when the server confirms (13.145092ms)
-✔ Contract: exactly four independent budgets and four allowed answers (3.209301ms)
-✔ Combination 001/256: exact payload in all 24 completion orders (1.012876ms)
-✔ Combination 002/256: exact payload in all 24 completion orders (0.333713ms)
-✔ Combination 003/256: exact payload in all 24 completion orders (0.308275ms)
-✔ Combination 004/256: exact payload in all 24 completion orders (0.667966ms)
-✔ Combination 005/256: exact payload in all 24 completion orders (0.3852ms)
-✔ Combination 006/256: exact payload in all 24 completion orders (0.45772ms)
-✔ Combination 007/256: exact payload in all 24 completion orders (0.261504ms)
-✔ Combination 008/256: exact payload in all 24 completion orders (0.423038ms)
-✔ Combination 009/256: exact payload in all 24 completion orders (0.417429ms)
-✔ Combination 010/256: exact payload in all 24 completion orders (0.25892ms)
-✔ Combination 011/256: exact payload in all 24 completion orders (0.279261ms)
-✔ Combination 012/256: exact payload in all 24 completion orders (0.359672ms)
-✔ Combination 013/256: exact payload in all 24 completion orders (0.269787ms)
-✔ Combination 014/256: exact payload in all 24 completion orders (0.426492ms)
-✔ Combination 015/256: exact payload in all 24 completion orders (0.473804ms)
-✔ Combination 016/256: exact payload in all 24 completion orders (0.511862ms)
-✔ Combination 017/256: exact payload in all 24 completion orders (1.593601ms)
-✔ Combination 018/256: exact payload in all 24 completion orders (0.476017ms)
-✔ Combination 019/256: exact payload in all 24 completion orders (0.254533ms)
-✔ Combination 020/256: exact payload in all 24 completion orders (0.146941ms)
-✔ Combination 021/256: exact payload in all 24 completion orders (0.671251ms)
-✔ Combination 022/256: exact payload in all 24 completion orders (0.355426ms)
-✔ Combination 023/256: exact payload in all 24 completion orders (0.15288ms)
-✔ Combination 024/256: exact payload in all 24 completion orders (0.247673ms)
-✔ Combination 025/256: exact payload in all 24 completion orders (0.166901ms)
-✔ Combination 026/256: exact payload in all 24 completion orders (0.153922ms)
-✔ Combination 027/256: exact payload in all 24 completion orders (0.365261ms)
-✔ Combination 028/256: exact payload in all 24 completion orders (0.178219ms)
-✔ Combination 029/256: exact payload in all 24 completion orders (0.354054ms)
-✔ Combination 030/256: exact payload in all 24 completion orders (0.181623ms)
-✔ Combination 031/256: exact payload in all 24 completion orders (0.203336ms)
-✔ Combination 032/256: exact payload in all 24 completion orders (0.352581ms)
-✔ Combination 033/256: exact payload in all 24 completion orders (0.183046ms)
-✔ Combination 034/256: exact payload in all 24 completion orders (0.258159ms)
-✔ Combination 035/256: exact payload in all 24 completion orders (0.213662ms)
-✔ Combination 036/256: exact payload in all 24 completion orders (0.770782ms)
-✔ Combination 037/256: exact payload in all 24 completion orders (0.229466ms)
-✔ Combination 038/256: exact payload in all 24 completion orders (0.17933ms)
-✔ Combination 039/256: exact payload in all 24 completion orders (0.936792ms)
-✔ Combination 040/256: exact payload in all 24 completion orders (0.283687ms)
-✔ Combination 041/256: exact payload in all 24 completion orders (0.144878ms)
-✔ Combination 042/256: exact payload in all 24 completion orders (0.439653ms)
-✔ Combination 043/256: exact payload in all 24 completion orders (0.265951ms)
-✔ Combination 044/256: exact payload in all 24 completion orders (0.171519ms)
-✔ Combination 045/256: exact payload in all 24 completion orders (0.178109ms)
-✔ Combination 046/256: exact payload in all 24 completion orders (0.223537ms)
-✔ Combination 047/256: exact payload in all 24 completion orders (0.143756ms)
-✔ Combination 048/256: exact payload in all 24 completion orders (0.148885ms)
-✔ Combination 049/256: exact payload in all 24 completion orders (0.13929ms)
-✔ Combination 050/256: exact payload in all 24 completion orders (0.178509ms)
-✔ Combination 051/256: exact payload in all 24 completion orders (0.136796ms)
-✔ Combination 052/256: exact payload in all 24 completion orders (0.133992ms)
-✔ Combination 053/256: exact payload in all 24 completion orders (0.155304ms)
-✔ Combination 054/256: exact payload in all 24 completion orders (0.285611ms)
-✔ Combination 055/256: exact payload in all 24 completion orders (0.14596ms)
-✔ Combination 056/256: exact payload in all 24 completion orders (0.469027ms)
-✔ Combination 057/256: exact payload in all 24 completion orders (0.489828ms)
-✔ Combination 058/256: exact payload in all 24 completion orders (0.196556ms)
-✔ Combination 059/256: exact payload in all 24 completion orders (0.15275ms)
-✔ Combination 060/256: exact payload in all 24 completion orders (0.200842ms)
-✔ Combination 061/256: exact payload in all 24 completion orders (0.176086ms)
-✔ Combination 062/256: exact payload in all 24 completion orders (0.160472ms)
-✔ Combination 063/256: exact payload in all 24 completion orders (1.256754ms)
-✔ Combination 064/256: exact payload in all 24 completion orders (0.782669ms)
-✔ Combination 065/256: exact payload in all 24 completion orders (0.160442ms)
-✔ Combination 066/256: exact payload in all 24 completion orders (0.182665ms)
-✔ Combination 067/256: exact payload in all 24 completion orders (0.131558ms)
-✔ Combination 068/256: exact payload in all 24 completion orders (0.161634ms)
-✔ Combination 069/256: exact payload in all 24 completion orders (0.222946ms)
-✔ Combination 070/256: exact payload in all 24 completion orders (0.140182ms)
-✔ Combination 071/256: exact payload in all 24 completion orders (0.125569ms)
-✔ Combination 072/256: exact payload in all 24 completion orders (0.188224ms)
-✔ Combination 073/256: exact payload in all 24 completion orders (0.223026ms)
-✔ Combination 074/256: exact payload in all 24 completion orders (0.272911ms)
-✔ Combination 075/256: exact payload in all 24 completion orders (0.13282ms)
-✔ Combination 076/256: exact payload in all 24 completion orders (0.126331ms)
-✔ Combination 077/256: exact payload in all 24 completion orders (0.183196ms)
-✔ Combination 078/256: exact payload in all 24 completion orders (0.335706ms)
-✔ Combination 079/256: exact payload in all 24 completion orders (0.134673ms)
-✔ Combination 080/256: exact payload in all 24 completion orders (0.21911ms)
-✔ Combination 081/256: exact payload in all 24 completion orders (0.352852ms)
-✔ Combination 082/256: exact payload in all 24 completion orders (0.878564ms)
-✔ Combination 083/256: exact payload in all 24 completion orders (0.243857ms)
-✔ Combination 084/256: exact payload in all 24 completion orders (0.139841ms)
-✔ Combination 085/256: exact payload in all 24 completion orders (0.831814ms)
-✔ Combination 086/256: exact payload in all 24 completion orders (0.153812ms)
-✔ Combination 087/256: exact payload in all 24 completion orders (0.695218ms)
-✔ Combination 088/256: exact payload in all 24 completion orders (0.138669ms)
-✔ Combination 089/256: exact payload in all 24 completion orders (0.124348ms)
-✔ Combination 090/256: exact payload in all 24 completion orders (0.233953ms)
-✔ Combination 091/256: exact payload in all 24 completion orders (0.198169ms)
-✔ Combination 092/256: exact payload in all 24 completion orders (0.206782ms)
-✔ Combination 093/256: exact payload in all 24 completion orders (0.192269ms)
-✔ Combination 094/256: exact payload in all 24 completion orders (0.248214ms)
-✔ Combination 095/256: exact payload in all 24 completion orders (0.128313ms)
-✔ Combination 096/256: exact payload in all 24 completion orders (0.28541ms)
-✔ Combination 097/256: exact payload in all 24 completion orders (0.129084ms)
-✔ Combination 098/256: exact payload in all 24 completion orders (0.121403ms)
-✔ Combination 099/256: exact payload in all 24 completion orders (0.19191ms)
-✔ Combination 100/256: exact payload in all 24 completion orders (0.176135ms)
-✔ Combination 101/256: exact payload in all 24 completion orders (0.234123ms)
-✔ Combination 102/256: exact payload in all 24 completion orders (0.129165ms)
-✔ Combination 103/256: exact payload in all 24 completion orders (0.123055ms)
-✔ Combination 104/256: exact payload in all 24 completion orders (0.179721ms)
-✔ Combination 105/256: exact payload in all 24 completion orders (0.126421ms)
-✔ Combination 106/256: exact payload in all 24 completion orders (0.122294ms)
-✔ Combination 107/256: exact payload in all 24 completion orders (0.123226ms)
-✔ Combination 108/256: exact payload in all 24 completion orders (0.149676ms)
-✔ Combination 109/256: exact payload in all 24 completion orders (0.122985ms)
-✔ Combination 110/256: exact payload in all 24 completion orders (0.250207ms)
-✔ Combination 111/256: exact payload in all 24 completion orders (0.151488ms)
-✔ Combination 112/256: exact payload in all 24 completion orders (0.323147ms)
-✔ Combination 113/256: exact payload in all 24 completion orders (0.264469ms)
-✔ Combination 114/256: exact payload in all 24 completion orders (0.189205ms)
-✔ Combination 115/256: exact payload in all 24 completion orders (0.127842ms)
-✔ Combination 116/256: exact payload in all 24 completion orders (0.121694ms)
-✔ Combination 117/256: exact payload in all 24 completion orders (0.120472ms)
-✔ Combination 118/256: exact payload in all 24 completion orders (0.157518ms)
-✔ Combination 119/256: exact payload in all 24 completion orders (0.226962ms)
-✔ Combination 120/256: exact payload in all 24 completion orders (0.134903ms)
-✔ Combination 121/256: exact payload in all 24 completion orders (0.191018ms)
-✔ Combination 122/256: exact payload in all 24 completion orders (0.125359ms)
-✔ Combination 123/256: exact payload in all 24 completion orders (0.121343ms)
-✔ Combination 124/256: exact payload in all 24 completion orders (0.172851ms)
-✔ Combination 125/256: exact payload in all 24 completion orders (0.286472ms)
-✔ Combination 126/256: exact payload in all 24 completion orders (0.143456ms)
-✔ Combination 127/256: exact payload in all 24 completion orders (0.123497ms)
-✔ Combination 128/256: exact payload in all 24 completion orders (0.232861ms)
-✔ Combination 129/256: exact payload in all 24 completion orders (0.233642ms)
-✔ Combination 130/256: exact payload in all 24 completion orders (0.148834ms)
-✔ Combination 131/256: exact payload in all 24 completion orders (0.124057ms)
-✔ Combination 132/256: exact payload in all 24 completion orders (0.142445ms)
-✔ Combination 133/256: exact payload in all 24 completion orders (0.126831ms)
-✔ Combination 134/256: exact payload in all 24 completion orders (0.188855ms)
-✔ Combination 135/256: exact payload in all 24 completion orders (0.231049ms)
-✔ Combination 136/256: exact payload in all 24 completion orders (0.130156ms)
-✔ Combination 137/256: exact payload in all 24 completion orders (0.120732ms)
-✔ Combination 138/256: exact payload in all 24 completion orders (0.583293ms)
-✔ Combination 139/256: exact payload in all 24 completion orders (0.181393ms)
-✔ Combination 140/256: exact payload in all 24 completion orders (0.214954ms)
-✔ Combination 141/256: exact payload in all 24 completion orders (0.137667ms)
-✔ Combination 142/256: exact payload in all 24 completion orders (0.127772ms)
-✔ Combination 143/256: exact payload in all 24 completion orders (0.186551ms)
-✔ Combination 144/256: exact payload in all 24 completion orders (0.216396ms)
-✔ Combination 145/256: exact payload in all 24 completion orders (0.129285ms)
-✔ Combination 146/256: exact payload in all 24 completion orders (0.119811ms)
-✔ Combination 147/256: exact payload in all 24 completion orders (0.144959ms)
-✔ Combination 148/256: exact payload in all 24 completion orders (0.234774ms)
-✔ Combination 149/256: exact payload in all 24 completion orders (0.133501ms)
-✔ Combination 150/256: exact payload in all 24 completion orders (0.123827ms)
-✔ Combination 151/256: exact payload in all 24 completion orders (0.210537ms)
-✔ Combination 152/256: exact payload in all 24 completion orders (0.159751ms)
-✔ Combination 153/256: exact payload in all 24 completion orders (0.386162ms)
-✔ Combination 154/256: exact payload in all 24 completion orders (0.200392ms)
-✔ Combination 155/256: exact payload in all 24 completion orders (0.150477ms)
-✔ Combination 156/256: exact payload in all 24 completion orders (0.151238ms)
-✔ Combination 157/256: exact payload in all 24 completion orders (0.123096ms)
-✔ Combination 158/256: exact payload in all 24 completion orders (0.122305ms)
-✔ Combination 159/256: exact payload in all 24 completion orders (0.139851ms)
-✔ Combination 160/256: exact payload in all 24 completion orders (0.123035ms)
-✔ Combination 161/256: exact payload in all 24 completion orders (0.118419ms)
-✔ Combination 162/256: exact payload in all 24 completion orders (0.183526ms)
-✔ Combination 163/256: exact payload in all 24 completion orders (0.128043ms)
-✔ Combination 164/256: exact payload in all 24 completion orders (0.728477ms)
-✔ Combination 165/256: exact payload in all 24 completion orders (0.15253ms)
-✔ Combination 166/256: exact payload in all 24 completion orders (0.123626ms)
-✔ Combination 167/256: exact payload in all 24 completion orders (0.11956ms)
-✔ Combination 168/256: exact payload in all 24 completion orders (0.161063ms)
-✔ Combination 169/256: exact payload in all 24 completion orders (0.177036ms)
-✔ Combination 170/256: exact payload in all 24 completion orders (0.258529ms)
-✔ Combination 171/256: exact payload in all 24 completion orders (0.157207ms)
-✔ Combination 172/256: exact payload in all 24 completion orders (0.122354ms)
-✔ Combination 173/256: exact payload in all 24 completion orders (0.161063ms)
-✔ Combination 174/256: exact payload in all 24 completion orders (0.121903ms)
-✔ Combination 175/256: exact payload in all 24 completion orders (0.117668ms)
-✔ Combination 176/256: exact payload in all 24 completion orders (0.116645ms)
-✔ Combination 177/256: exact payload in all 24 completion orders (0.116635ms)
-✔ Combination 178/256: exact payload in all 24 completion orders (0.117557ms)
-✔ Combination 179/256: exact payload in all 24 completion orders (0.114232ms)
-✔ Combination 180/256: exact payload in all 24 completion orders (0.118529ms)
-✔ Combination 181/256: exact payload in all 24 completion orders (0.139521ms)
-✔ Combination 182/256: exact payload in all 24 completion orders (0.118909ms)
-✔ Combination 183/256: exact payload in all 24 completion orders (0.117627ms)
-✔ Combination 184/256: exact payload in all 24 completion orders (0.176606ms)
-✔ Combination 185/256: exact payload in all 24 completion orders (0.127592ms)
-✔ Combination 186/256: exact payload in all 24 completion orders (0.126631ms)
-✔ Combination 187/256: exact payload in all 24 completion orders (0.178088ms)
-✔ Combination 188/256: exact payload in all 24 completion orders (0.129595ms)
-✔ Combination 189/256: exact payload in all 24 completion orders (0.208214ms)
-✔ Combination 190/256: exact payload in all 24 completion orders (0.123326ms)
-✔ Combination 191/256: exact payload in all 24 completion orders (0.171869ms)
-✔ Combination 192/256: exact payload in all 24 completion orders (0.125519ms)
-✔ Combination 193/256: exact payload in all 24 completion orders (0.122595ms)
-✔ Combination 194/256: exact payload in all 24 completion orders (0.118038ms)
-✔ Combination 195/256: exact payload in all 24 completion orders (0.117016ms)
-✔ Combination 196/256: exact payload in all 24 completion orders (0.116135ms)
-✔ Combination 197/256: exact payload in all 24 completion orders (0.142885ms)
-✔ Combination 198/256: exact payload in all 24 completion orders (0.262626ms)
-✔ Combination 199/256: exact payload in all 24 completion orders (0.149024ms)
-✔ Combination 200/256: exact payload in all 24 completion orders (0.126991ms)
-✔ Combination 201/256: exact payload in all 24 completion orders (0.119711ms)
-✔ Combination 202/256: exact payload in all 24 completion orders (0.427043ms)
-✔ Combination 203/256: exact payload in all 24 completion orders (0.162225ms)
-✔ Combination 204/256: exact payload in all 24 completion orders (0.241434ms)
-✔ Combination 205/256: exact payload in all 24 completion orders (0.299681ms)
-✔ Combination 206/256: exact payload in all 24 completion orders (0.447805ms)
-✔ Combination 207/256: exact payload in all 24 completion orders (0.131218ms)
-✔ Combination 208/256: exact payload in all 24 completion orders (0.121593ms)
-✔ Combination 209/256: exact payload in all 24 completion orders (0.117877ms)
-✔ Combination 210/256: exact payload in all 24 completion orders (0.268305ms)
-✔ Combination 211/256: exact payload in all 24 completion orders (0.12603ms)
-✔ Combination 212/256: exact payload in all 24 completion orders (0.12634ms)
-✔ Combination 213/256: exact payload in all 24 completion orders (0.117236ms)
-✔ Combination 214/256: exact payload in all 24 completion orders (0.118128ms)
-✔ Combination 215/256: exact payload in all 24 completion orders (0.161904ms)
-✔ Combination 216/256: exact payload in all 24 completion orders (0.11994ms)
-✔ Combination 217/256: exact payload in all 24 completion orders (0.13948ms)
-✔ Combination 218/256: exact payload in all 24 completion orders (0.556919ms)
-✔ Combination 219/256: exact payload in all 24 completion orders (0.130727ms)
-✔ Combination 220/256: exact payload in all 24 completion orders (0.244618ms)
-✔ Combination 221/256: exact payload in all 24 completion orders (0.125599ms)
-✔ Combination 222/256: exact payload in all 24 completion orders (0.1194ms)
-✔ Combination 223/256: exact payload in all 24 completion orders (0.25243ms)
-✔ Combination 224/256: exact payload in all 24 completion orders (0.131438ms)
-✔ Combination 225/256: exact payload in all 24 completion orders (0.11912ms)
-✔ Combination 226/256: exact payload in all 24 completion orders (0.155354ms)
-✔ Combination 227/256: exact payload in all 24 completion orders (0.141223ms)
-✔ Combination 228/256: exact payload in all 24 completion orders (0.120291ms)
-✔ Combination 229/256: exact payload in all 24 completion orders (0.118629ms)
-✔ Combination 230/256: exact payload in all 24 completion orders (0.116014ms)
-✔ Combination 231/256: exact payload in all 24 completion orders (0.118789ms)
-✔ Combination 232/256: exact payload in all 24 completion orders (0.153431ms)
-✔ Combination 233/256: exact payload in all 24 completion orders (0.142064ms)
-✔ Combination 234/256: exact payload in all 24 completion orders (0.120221ms)
-✔ Combination 235/256: exact payload in all 24 completion orders (0.137167ms)
-✔ Combination 236/256: exact payload in all 24 completion orders (0.120492ms)
-✔ Combination 237/256: exact payload in all 24 completion orders (0.117688ms)
-✔ Combination 238/256: exact payload in all 24 completion orders (0.118619ms)
-✔ Combination 239/256: exact payload in all 24 completion orders (0.144788ms)
-✔ Combination 240/256: exact payload in all 24 completion orders (0.139901ms)
-✔ Combination 241/256: exact payload in all 24 completion orders (0.122946ms)
-✔ Combination 242/256: exact payload in all 24 completion orders (0.117117ms)
-✔ Combination 243/256: exact payload in all 24 completion orders (0.116385ms)
-✔ Combination 244/256: exact payload in all 24 completion orders (0.114533ms)
-✔ Combination 245/256: exact payload in all 24 completion orders (0.779134ms)
-✔ Combination 246/256: exact payload in all 24 completion orders (0.160943ms)
-✔ Combination 247/256: exact payload in all 24 completion orders (0.128083ms)
-✔ Combination 248/256: exact payload in all 24 completion orders (0.11928ms)
-✔ Combination 249/256: exact payload in all 24 completion orders (0.122976ms)
-✔ Combination 250/256: exact payload in all 24 completion orders (0.656189ms)
-✔ Combination 251/256: exact payload in all 24 completion orders (0.129455ms)
-✔ Combination 252/256: exact payload in all 24 completion orders (0.120351ms)
-✔ Combination 253/256: exact payload in all 24 completion orders (0.117908ms)
-✔ Combination 254/256: exact payload in all 24 completion orders (0.156075ms)
-✔ Combination 255/256: exact payload in all 24 completion orders (0.192751ms)
-✔ Combination 256/256: exact payload in all 24 completion orders (0.1333ms)
-✔ Incomplete response pattern 0: never creates a payload (0.561836ms)
-✔ Incomplete response pattern 1: never creates a payload (0.057787ms)
-✔ Incomplete response pattern 2: never creates a payload (0.041212ms)
-✔ Incomplete response pattern 3: never creates a payload (0.035163ms)
-✔ Incomplete response pattern 4: never creates a payload (0.03929ms)
-✔ Incomplete response pattern 5: never creates a payload (0.032909ms)
-✔ Incomplete response pattern 6: never creates a payload (0.030095ms)
-✔ Incomplete response pattern 7: never creates a payload (0.028923ms)
-✔ Incomplete response pattern 8: never creates a payload (0.282756ms)
-✔ Incomplete response pattern 9: never creates a payload (0.057497ms)
-✔ Incomplete response pattern 10: never creates a payload (0.034713ms)
-✔ Incomplete response pattern 11: never creates a payload (0.029745ms)
-✔ Incomplete response pattern 12: never creates a payload (0.029114ms)
-✔ Incomplete response pattern 13: never creates a payload (0.158719ms)
-✔ Incomplete response pattern 14: never creates a payload (0.054171ms)
-✔ State transitions are immutable (0.412842ms)
-✔ Invalid levels and answers are rejected (0.393913ms)
-✔ Every illustrated route leaves the same origin and never identifies a destination (0.215775ms)
-ℹ tests 292
-ℹ suites 0
-ℹ pass 292
-ℹ fail 0
-ℹ cancelled 0
-ℹ skipped 0
-ℹ todo 0
-ℹ duration_ms 223.522662
+TAP version 13
+# Subtest: POST sends only the requested anonymous fields as JSON; cookies omitted
+ok 1 - POST sends only the requested anonymous fields as JSON; cookies omitted
+  ---
+  duration_ms: 5.224939
+  type: 'test'
+  ...
+# Subtest: HTTP 400: rejects without retries
+ok 2 - HTTP 400: rejects without retries
+  ---
+  duration_ms: 0.92737
+  type: 'test'
+  ...
+# Subtest: HTTP 401: rejects without retries
+ok 3 - HTTP 401: rejects without retries
+  ---
+  duration_ms: 0.393574
+  type: 'test'
+  ...
+# Subtest: HTTP 403: rejects without retries
+ok 4 - HTTP 403: rejects without retries
+  ---
+  duration_ms: 0.261746
+  type: 'test'
+  ...
+# Subtest: HTTP 404: rejects without retries
+ok 5 - HTTP 404: rejects without retries
+  ---
+  duration_ms: 0.232742
+  type: 'test'
+  ...
+# Subtest: HTTP 422: rejects without retries
+ok 6 - HTTP 422: rejects without retries
+  ---
+  duration_ms: 0.299312
+  type: 'test'
+  ...
+# Subtest: HTTP 429: rejects without retries
+ok 7 - HTTP 429: rejects without retries
+  ---
+  duration_ms: 0.248144
+  type: 'test'
+  ...
+# Subtest: HTTP 500: rejects without retries
+ok 8 - HTTP 500: rejects without retries
+  ---
+  duration_ms: 0.328366
+  type: 'test'
+  ...
+# Subtest: HTTP 503: rejects without retries
+ok 9 - HTTP 503: rejects without retries
+  ---
+  duration_ms: 0.402668
+  type: 'test'
+  ...
+# Subtest: Network error preserves a helpful German error
+ok 10 - Network error preserves a helpful German error
+  ---
+  duration_ms: 0.520636
+  type: 'test'
+  ...
+# Subtest: Unconfirmed response <!doctype html>Not JSON: cannot become success
+ok 11 - Unconfirmed response <!doctype html>Not JSON: cannot become success
+  ---
+  duration_ms: 1.179771
+  type: 'test'
+  ...
+# Subtest: Unconfirmed response : cannot become success
+ok 12 - Unconfirmed response : cannot become success
+  ---
+  duration_ms: 0.223107
+  type: 'test'
+  ...
+# Subtest: Unconfirmed response null: cannot become success
+ok 13 - Unconfirmed response null: cannot become success
+  ---
+  duration_ms: 0.224629
+  type: 'test'
+  ...
+# Subtest: Unconfirmed response {"ok":false}: cannot become success
+ok 14 - Unconfirmed response {"ok":false}: cannot become success
+  ---
+  duration_ms: 0.279282
+  type: 'test'
+  ...
+# Subtest: Unconfirmed response {"errors":[{"message":"rejecte: cannot become success
+ok 15 - Unconfirmed response {"errors":[{"message":"rejecte: cannot become success
+  ---
+  duration_ms: 0.409729
+  type: 'test'
+  ...
+# Subtest: Timeout aborts the request and warns about uncertain delivery; no automatic retry
+ok 16 - Timeout aborts the request and warns about uncertain delivery; no automatic retry
+  ---
+  duration_ms: 9.400588
+  type: 'test'
+  ...
+# Subtest: Slow request resolves only when the server confirms
+ok 17 - Slow request resolves only when the server confirms
+  ---
+  duration_ms: 13.285955
+  type: 'test'
+  ...
+# Subtest: Contract: exactly four independent budgets and four allowed answers
+ok 18 - Contract: exactly four independent budgets and four allowed answers
+  ---
+  duration_ms: 3.737964
+  type: 'test'
+  ...
+# Subtest: Combination 001/256: exact payload in all 24 completion orders
+ok 19 - Combination 001/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.932528
+  type: 'test'
+  ...
+# Subtest: Combination 002/256: exact payload in all 24 completion orders
+ok 20 - Combination 002/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.369427
+  type: 'test'
+  ...
+# Subtest: Combination 003/256: exact payload in all 24 completion orders
+ok 21 - Combination 003/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.912558
+  type: 'test'
+  ...
+# Subtest: Combination 004/256: exact payload in all 24 completion orders
+ok 22 - Combination 004/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.525543
+  type: 'test'
+  ...
+# Subtest: Combination 005/256: exact payload in all 24 completion orders
+ok 23 - Combination 005/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 1.195555
+  type: 'test'
+  ...
+# Subtest: Combination 006/256: exact payload in all 24 completion orders
+ok 24 - Combination 006/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.65611
+  type: 'test'
+  ...
+# Subtest: Combination 007/256: exact payload in all 24 completion orders
+ok 25 - Combination 007/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.410139
+  type: 'test'
+  ...
+# Subtest: Combination 008/256: exact payload in all 24 completion orders
+ok 26 - Combination 008/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.418062
+  type: 'test'
+  ...
+# Subtest: Combination 009/256: exact payload in all 24 completion orders
+ok 27 - Combination 009/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.314054
+  type: 'test'
+  ...
+# Subtest: Combination 010/256: exact payload in all 24 completion orders
+ok 28 - Combination 010/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.276007
+  type: 'test'
+  ...
+# Subtest: Combination 011/256: exact payload in all 24 completion orders
+ok 29 - Combination 011/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.451412
+  type: 'test'
+  ...
+# Subtest: Combination 012/256: exact payload in all 24 completion orders
+ok 30 - Combination 012/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.226833
+  type: 'test'
+  ...
+# Subtest: Combination 013/256: exact payload in all 24 completion orders
+ok 31 - Combination 013/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.251179
+  type: 'test'
+  ...
+# Subtest: Combination 014/256: exact payload in all 24 completion orders
+ok 32 - Combination 014/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.299542
+  type: 'test'
+  ...
+# Subtest: Combination 015/256: exact payload in all 24 completion orders
+ok 33 - Combination 015/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.226101
+  type: 'test'
+  ...
+# Subtest: Combination 016/256: exact payload in all 24 completion orders
+ok 34 - Combination 016/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 1.301786
+  type: 'test'
+  ...
+# Subtest: Combination 017/256: exact payload in all 24 completion orders
+ok 35 - Combination 017/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.185189
+  type: 'test'
+  ...
+# Subtest: Combination 018/256: exact payload in all 24 completion orders
+ok 36 - Combination 018/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.224409
+  type: 'test'
+  ...
+# Subtest: Combination 019/256: exact payload in all 24 completion orders
+ok 37 - Combination 019/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.148945
+  type: 'test'
+  ...
+# Subtest: Combination 020/256: exact payload in all 24 completion orders
+ok 38 - Combination 020/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.138429
+  type: 'test'
+  ...
+# Subtest: Combination 021/256: exact payload in all 24 completion orders
+ok 39 - Combination 021/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.136286
+  type: 'test'
+  ...
+# Subtest: Combination 022/256: exact payload in all 24 completion orders
+ok 40 - Combination 022/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.190778
+  type: 'test'
+  ...
+# Subtest: Combination 023/256: exact payload in all 24 completion orders
+ok 41 - Combination 023/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.194143
+  type: 'test'
+  ...
+# Subtest: Combination 024/256: exact payload in all 24 completion orders
+ok 42 - Combination 024/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.140322
+  type: 'test'
+  ...
+# Subtest: Combination 025/256: exact payload in all 24 completion orders
+ok 43 - Combination 025/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.155805
+  type: 'test'
+  ...
+# Subtest: Combination 026/256: exact payload in all 24 completion orders
+ok 44 - Combination 026/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.156336
+  type: 'test'
+  ...
+# Subtest: Combination 027/256: exact payload in all 24 completion orders
+ok 45 - Combination 027/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.170066
+  type: 'test'
+  ...
+# Subtest: Combination 028/256: exact payload in all 24 completion orders
+ok 46 - Combination 028/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.168915
+  type: 'test'
+  ...
+# Subtest: Combination 029/256: exact payload in all 24 completion orders
+ok 47 - Combination 029/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.371581
+  type: 'test'
+  ...
+# Subtest: Combination 030/256: exact payload in all 24 completion orders
+ok 48 - Combination 030/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.301615
+  type: 'test'
+  ...
+# Subtest: Combination 031/256: exact payload in all 24 completion orders
+ok 49 - Combination 031/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.182636
+  type: 'test'
+  ...
+# Subtest: Combination 032/256: exact payload in all 24 completion orders
+ok 50 - Combination 032/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.220854
+  type: 'test'
+  ...
+# Subtest: Combination 033/256: exact payload in all 24 completion orders
+ok 51 - Combination 033/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.196496
+  type: 'test'
+  ...
+# Subtest: Combination 034/256: exact payload in all 24 completion orders
+ok 52 - Combination 034/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.373624
+  type: 'test'
+  ...
+# Subtest: Combination 035/256: exact payload in all 24 completion orders
+ok 53 - Combination 035/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.284659
+  type: 'test'
+  ...
+# Subtest: Combination 036/256: exact payload in all 24 completion orders
+ok 54 - Combination 036/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.182966
+  type: 'test'
+  ...
+# Subtest: Combination 037/256: exact payload in all 24 completion orders
+ok 55 - Combination 037/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.17232
+  type: 'test'
+  ...
+# Subtest: Combination 038/256: exact payload in all 24 completion orders
+ok 56 - Combination 038/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.171759
+  type: 'test'
+  ...
+# Subtest: Combination 039/256: exact payload in all 24 completion orders
+ok 57 - Combination 039/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.174142
+  type: 'test'
+  ...
+# Subtest: Combination 040/256: exact payload in all 24 completion orders
+ok 58 - Combination 040/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.141503
+  type: 'test'
+  ...
+# Subtest: Combination 041/256: exact payload in all 24 completion orders
+ok 59 - Combination 041/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.135084
+  type: 'test'
+  ...
+# Subtest: Combination 042/256: exact payload in all 24 completion orders
+ok 60 - Combination 042/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.136777
+  type: 'test'
+  ...
+# Subtest: Combination 043/256: exact payload in all 24 completion orders
+ok 61 - Combination 043/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.133432
+  type: 'test'
+  ...
+# Subtest: Combination 044/256: exact payload in all 24 completion orders
+ok 62 - Combination 044/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.203477
+  type: 'test'
+  ...
+# Subtest: Combination 045/256: exact payload in all 24 completion orders
+ok 63 - Combination 045/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.136666
+  type: 'test'
+  ...
+# Subtest: Combination 046/256: exact payload in all 24 completion orders
+ok 64 - Combination 046/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.204629
+  type: 'test'
+  ...
+# Subtest: Combination 047/256: exact payload in all 24 completion orders
+ok 65 - Combination 047/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.149636
+  type: 'test'
+  ...
+# Subtest: Combination 048/256: exact payload in all 24 completion orders
+ok 66 - Combination 048/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.136757
+  type: 'test'
+  ...
+# Subtest: Combination 049/256: exact payload in all 24 completion orders
+ok 67 - Combination 049/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.202726
+  type: 'test'
+  ...
+# Subtest: Combination 050/256: exact payload in all 24 completion orders
+ok 68 - Combination 050/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.305111
+  type: 'test'
+  ...
+# Subtest: Combination 051/256: exact payload in all 24 completion orders
+ok 69 - Combination 051/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.139861
+  type: 'test'
+  ...
+# Subtest: Combination 052/256: exact payload in all 24 completion orders
+ok 70 - Combination 052/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.156526
+  type: 'test'
+  ...
+# Subtest: Combination 053/256: exact payload in all 24 completion orders
+ok 71 - Combination 053/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.128064
+  type: 'test'
+  ...
+# Subtest: Combination 054/256: exact payload in all 24 completion orders
+ok 72 - Combination 054/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.182255
+  type: 'test'
+  ...
+# Subtest: Combination 055/256: exact payload in all 24 completion orders
+ok 73 - Combination 055/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.19931
+  type: 'test'
+  ...
+# Subtest: Combination 056/256: exact payload in all 24 completion orders
+ok 74 - Combination 056/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.133922
+  type: 'test'
+  ...
+# Subtest: Combination 057/256: exact payload in all 24 completion orders
+ok 75 - Combination 057/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.161134
+  type: 'test'
+  ...
+# Subtest: Combination 058/256: exact payload in all 24 completion orders
+ok 76 - Combination 058/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.129876
+  type: 'test'
+  ...
+# Subtest: Combination 059/256: exact payload in all 24 completion orders
+ok 77 - Combination 059/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.171099
+  type: 'test'
+  ...
+# Subtest: Combination 060/256: exact payload in all 24 completion orders
+ok 78 - Combination 060/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.199031
+  type: 'test'
+  ...
+# Subtest: Combination 061/256: exact payload in all 24 completion orders
+ok 79 - Combination 061/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.189456
+  type: 'test'
+  ...
+# Subtest: Combination 062/256: exact payload in all 24 completion orders
+ok 80 - Combination 062/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.256147
+  type: 'test'
+  ...
+# Subtest: Combination 063/256: exact payload in all 24 completion orders
+ok 81 - Combination 063/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.254394
+  type: 'test'
+  ...
+# Subtest: Combination 064/256: exact payload in all 24 completion orders
+ok 82 - Combination 064/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.201303
+  type: 'test'
+  ...
+# Subtest: Combination 065/256: exact payload in all 24 completion orders
+ok 83 - Combination 065/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.131759
+  type: 'test'
+  ...
+# Subtest: Combination 066/256: exact payload in all 24 completion orders
+ok 84 - Combination 066/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122715
+  type: 'test'
+  ...
+# Subtest: Combination 067/256: exact payload in all 24 completion orders
+ok 85 - Combination 067/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.161734
+  type: 'test'
+  ...
+# Subtest: Combination 068/256: exact payload in all 24 completion orders
+ok 86 - Combination 068/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.210568
+  type: 'test'
+  ...
+# Subtest: Combination 069/256: exact payload in all 24 completion orders
+ok 87 - Combination 069/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.223367
+  type: 'test'
+  ...
+# Subtest: Combination 070/256: exact payload in all 24 completion orders
+ok 88 - Combination 070/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.182175
+  type: 'test'
+  ...
+# Subtest: Combination 071/256: exact payload in all 24 completion orders
+ok 89 - Combination 071/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.130036
+  type: 'test'
+  ...
+# Subtest: Combination 072/256: exact payload in all 24 completion orders
+ok 90 - Combination 072/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.168995
+  type: 'test'
+  ...
+# Subtest: Combination 073/256: exact payload in all 24 completion orders
+ok 91 - Combination 073/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.156636
+  type: 'test'
+  ...
+# Subtest: Combination 074/256: exact payload in all 24 completion orders
+ok 92 - Combination 074/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.163747
+  type: 'test'
+  ...
+# Subtest: Combination 075/256: exact payload in all 24 completion orders
+ok 93 - Combination 075/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.127983
+  type: 'test'
+  ...
+# Subtest: Combination 076/256: exact payload in all 24 completion orders
+ok 94 - Combination 076/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.124618
+  type: 'test'
+  ...
+# Subtest: Combination 077/256: exact payload in all 24 completion orders
+ok 95 - Combination 077/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.121964
+  type: 'test'
+  ...
+# Subtest: Combination 078/256: exact payload in all 24 completion orders
+ok 96 - Combination 078/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.209957
+  type: 'test'
+  ...
+# Subtest: Combination 079/256: exact payload in all 24 completion orders
+ok 97 - Combination 079/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.207133
+  type: 'test'
+  ...
+# Subtest: Combination 080/256: exact payload in all 24 completion orders
+ok 98 - Combination 080/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.203707
+  type: 'test'
+  ...
+# Subtest: Combination 081/256: exact payload in all 24 completion orders
+ok 99 - Combination 081/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.130057
+  type: 'test'
+  ...
+# Subtest: Combination 082/256: exact payload in all 24 completion orders
+ok 100 - Combination 082/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.142395
+  type: 'test'
+  ...
+# Subtest: Combination 083/256: exact payload in all 24 completion orders
+ok 101 - Combination 083/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122495
+  type: 'test'
+  ...
+# Subtest: Combination 084/256: exact payload in all 24 completion orders
+ok 102 - Combination 084/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.166832
+  type: 'test'
+  ...
+# Subtest: Combination 085/256: exact payload in all 24 completion orders
+ok 103 - Combination 085/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.130828
+  type: 'test'
+  ...
+# Subtest: Combination 086/256: exact payload in all 24 completion orders
+ok 104 - Combination 086/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.123287
+  type: 'test'
+  ...
+# Subtest: Combination 087/256: exact payload in all 24 completion orders
+ok 105 - Combination 087/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.468998
+  type: 'test'
+  ...
+# Subtest: Combination 088/256: exact payload in all 24 completion orders
+ok 106 - Combination 088/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.227193
+  type: 'test'
+  ...
+# Subtest: Combination 089/256: exact payload in all 24 completion orders
+ok 107 - Combination 089/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.142686
+  type: 'test'
+  ...
+# Subtest: Combination 090/256: exact payload in all 24 completion orders
+ok 108 - Combination 090/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122405
+  type: 'test'
+  ...
+# Subtest: Combination 091/256: exact payload in all 24 completion orders
+ok 109 - Combination 091/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.123967
+  type: 'test'
+  ...
+# Subtest: Combination 092/256: exact payload in all 24 completion orders
+ok 110 - Combination 092/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122515
+  type: 'test'
+  ...
+# Subtest: Combination 093/256: exact payload in all 24 completion orders
+ok 111 - Combination 093/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.170998
+  type: 'test'
+  ...
+# Subtest: Combination 094/256: exact payload in all 24 completion orders
+ok 112 - Combination 094/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.174042
+  type: 'test'
+  ...
+# Subtest: Combination 095/256: exact payload in all 24 completion orders
+ok 113 - Combination 095/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.126281
+  type: 'test'
+  ...
+# Subtest: Combination 096/256: exact payload in all 24 completion orders
+ok 114 - Combination 096/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.171528
+  type: 'test'
+  ...
+# Subtest: Combination 097/256: exact payload in all 24 completion orders
+ok 115 - Combination 097/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.124749
+  type: 'test'
+  ...
+# Subtest: Combination 098/256: exact payload in all 24 completion orders
+ok 116 - Combination 098/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.143918
+  type: 'test'
+  ...
+# Subtest: Combination 099/256: exact payload in all 24 completion orders
+ok 117 - Combination 099/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.474537
+  type: 'test'
+  ...
+# Subtest: Combination 100/256: exact payload in all 24 completion orders
+ok 118 - Combination 100/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.161424
+  type: 'test'
+  ...
+# Subtest: Combination 101/256: exact payload in all 24 completion orders
+ok 119 - Combination 101/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.126701
+  type: 'test'
+  ...
+# Subtest: Combination 102/256: exact payload in all 24 completion orders
+ok 120 - Combination 102/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.140562
+  type: 'test'
+  ...
+# Subtest: Combination 103/256: exact payload in all 24 completion orders
+ok 121 - Combination 103/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.119671
+  type: 'test'
+  ...
+# Subtest: Combination 104/256: exact payload in all 24 completion orders
+ok 122 - Combination 104/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.11892
+  type: 'test'
+  ...
+# Subtest: Combination 105/256: exact payload in all 24 completion orders
+ok 123 - Combination 105/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.163127
+  type: 'test'
+  ...
+# Subtest: Combination 106/256: exact payload in all 24 completion orders
+ok 124 - Combination 106/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122615
+  type: 'test'
+  ...
+# Subtest: Combination 107/256: exact payload in all 24 completion orders
+ok 125 - Combination 107/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.124708
+  type: 'test'
+  ...
+# Subtest: Combination 108/256: exact payload in all 24 completion orders
+ok 126 - Combination 108/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.119631
+  type: 'test'
+  ...
+# Subtest: Combination 109/256: exact payload in all 24 completion orders
+ok 127 - Combination 109/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.31782
+  type: 'test'
+  ...
+# Subtest: Combination 110/256: exact payload in all 24 completion orders
+ok 128 - Combination 110/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.128754
+  type: 'test'
+  ...
+# Subtest: Combination 111/256: exact payload in all 24 completion orders
+ok 129 - Combination 111/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.238871
+  type: 'test'
+  ...
+# Subtest: Combination 112/256: exact payload in all 24 completion orders
+ok 130 - Combination 112/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.506465
+  type: 'test'
+  ...
+# Subtest: Combination 113/256: exact payload in all 24 completion orders
+ok 131 - Combination 113/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.130587
+  type: 'test'
+  ...
+# Subtest: Combination 114/256: exact payload in all 24 completion orders
+ok 132 - Combination 114/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.213182
+  type: 'test'
+  ...
+# Subtest: Combination 115/256: exact payload in all 24 completion orders
+ok 133 - Combination 115/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.127242
+  type: 'test'
+  ...
+# Subtest: Combination 116/256: exact payload in all 24 completion orders
+ok 134 - Combination 116/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.11936
+  type: 'test'
+  ...
+# Subtest: Combination 117/256: exact payload in all 24 completion orders
+ok 135 - Combination 117/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.23852
+  type: 'test'
+  ...
+# Subtest: Combination 118/256: exact payload in all 24 completion orders
+ok 136 - Combination 118/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.142926
+  type: 'test'
+  ...
+# Subtest: Combination 119/256: exact payload in all 24 completion orders
+ok 137 - Combination 119/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.169235
+  type: 'test'
+  ...
+# Subtest: Combination 120/256: exact payload in all 24 completion orders
+ok 138 - Combination 120/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.208054
+  type: 'test'
+  ...
+# Subtest: Combination 121/256: exact payload in all 24 completion orders
+ok 139 - Combination 121/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.128404
+  type: 'test'
+  ...
+# Subtest: Combination 122/256: exact payload in all 24 completion orders
+ok 140 - Combination 122/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.125379
+  type: 'test'
+  ...
+# Subtest: Combination 123/256: exact payload in all 24 completion orders
+ok 141 - Combination 123/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.11907
+  type: 'test'
+  ...
+# Subtest: Combination 124/256: exact payload in all 24 completion orders
+ok 142 - Combination 124/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.259762
+  type: 'test'
+  ...
+# Subtest: Combination 125/256: exact payload in all 24 completion orders
+ok 143 - Combination 125/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.170748
+  type: 'test'
+  ...
+# Subtest: Combination 126/256: exact payload in all 24 completion orders
+ok 144 - Combination 126/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.123977
+  type: 'test'
+  ...
+# Subtest: Combination 127/256: exact payload in all 24 completion orders
+ok 145 - Combination 127/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.116425
+  type: 'test'
+  ...
+# Subtest: Combination 128/256: exact payload in all 24 completion orders
+ok 146 - Combination 128/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.11901
+  type: 'test'
+  ...
+# Subtest: Combination 129/256: exact payload in all 24 completion orders
+ok 147 - Combination 129/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.117187
+  type: 'test'
+  ...
+# Subtest: Combination 130/256: exact payload in all 24 completion orders
+ok 148 - Combination 130/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.118249
+  type: 'test'
+  ...
+# Subtest: Combination 131/256: exact payload in all 24 completion orders
+ok 149 - Combination 131/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.118358
+  type: 'test'
+  ...
+# Subtest: Combination 132/256: exact payload in all 24 completion orders
+ok 150 - Combination 132/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.142525
+  type: 'test'
+  ...
+# Subtest: Combination 133/256: exact payload in all 24 completion orders
+ok 151 - Combination 133/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.17875
+  type: 'test'
+  ...
+# Subtest: Combination 134/256: exact payload in all 24 completion orders
+ok 152 - Combination 134/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.124929
+  type: 'test'
+  ...
+# Subtest: Combination 135/256: exact payload in all 24 completion orders
+ok 153 - Combination 135/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.118208
+  type: 'test'
+  ...
+# Subtest: Combination 136/256: exact payload in all 24 completion orders
+ok 154 - Combination 136/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.195886
+  type: 'test'
+  ...
+# Subtest: Combination 137/256: exact payload in all 24 completion orders
+ok 155 - Combination 137/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.12588
+  type: 'test'
+  ...
+# Subtest: Combination 138/256: exact payload in all 24 completion orders
+ok 156 - Combination 138/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.502048
+  type: 'test'
+  ...
+# Subtest: Combination 139/256: exact payload in all 24 completion orders
+ok 157 - Combination 139/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.173182
+  type: 'test'
+  ...
+# Subtest: Combination 140/256: exact payload in all 24 completion orders
+ok 158 - Combination 140/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.129926
+  type: 'test'
+  ...
+# Subtest: Combination 141/256: exact payload in all 24 completion orders
+ok 159 - Combination 141/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.225991
+  type: 'test'
+  ...
+# Subtest: Combination 142/256: exact payload in all 24 completion orders
+ok 160 - Combination 142/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.241805
+  type: 'test'
+  ...
+# Subtest: Combination 143/256: exact payload in all 24 completion orders
+ok 161 - Combination 143/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.126781
+  type: 'test'
+  ...
+# Subtest: Combination 144/256: exact payload in all 24 completion orders
+ok 162 - Combination 144/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.118278
+  type: 'test'
+  ...
+# Subtest: Combination 145/256: exact payload in all 24 completion orders
+ok 163 - Combination 145/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.118179
+  type: 'test'
+  ...
+# Subtest: Combination 146/256: exact payload in all 24 completion orders
+ok 164 - Combination 146/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.115685
+  type: 'test'
+  ...
+# Subtest: Combination 147/256: exact payload in all 24 completion orders
+ok 165 - Combination 147/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.117357
+  type: 'test'
+  ...
+# Subtest: Combination 148/256: exact payload in all 24 completion orders
+ok 166 - Combination 148/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.190137
+  type: 'test'
+  ...
+# Subtest: Combination 149/256: exact payload in all 24 completion orders
+ok 167 - Combination 149/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.124367
+  type: 'test'
+  ...
+# Subtest: Combination 150/256: exact payload in all 24 completion orders
+ok 168 - Combination 150/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.117948
+  type: 'test'
+  ...
+# Subtest: Combination 151/256: exact payload in all 24 completion orders
+ok 169 - Combination 151/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.202045
+  type: 'test'
+  ...
+# Subtest: Combination 152/256: exact payload in all 24 completion orders
+ok 170 - Combination 152/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.130747
+  type: 'test'
+  ...
+# Subtest: Combination 153/256: exact payload in all 24 completion orders
+ok 171 - Combination 153/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.124638
+  type: 'test'
+  ...
+# Subtest: Combination 154/256: exact payload in all 24 completion orders
+ok 172 - Combination 154/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.193452
+  type: 'test'
+  ...
+# Subtest: Combination 155/256: exact payload in all 24 completion orders
+ok 173 - Combination 155/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.230138
+  type: 'test'
+  ...
+# Subtest: Combination 156/256: exact payload in all 24 completion orders
+ok 174 - Combination 156/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.128054
+  type: 'test'
+  ...
+# Subtest: Combination 157/256: exact payload in all 24 completion orders
+ok 175 - Combination 157/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.155295
+  type: 'test'
+  ...
+# Subtest: Combination 158/256: exact payload in all 24 completion orders
+ok 176 - Combination 158/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.126521
+  type: 'test'
+  ...
+# Subtest: Combination 159/256: exact payload in all 24 completion orders
+ok 177 - Combination 159/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.121744
+  type: 'test'
+  ...
+# Subtest: Combination 160/256: exact payload in all 24 completion orders
+ok 178 - Combination 160/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.179821
+  type: 'test'
+  ...
+# Subtest: Combination 161/256: exact payload in all 24 completion orders
+ok 179 - Combination 161/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122925
+  type: 'test'
+  ...
+# Subtest: Combination 162/256: exact payload in all 24 completion orders
+ok 180 - Combination 162/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.143537
+  type: 'test'
+  ...
+# Subtest: Combination 163/256: exact payload in all 24 completion orders
+ok 181 - Combination 163/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.673006
+  type: 'test'
+  ...
+# Subtest: Combination 164/256: exact payload in all 24 completion orders
+ok 182 - Combination 164/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.212501
+  type: 'test'
+  ...
+# Subtest: Combination 165/256: exact payload in all 24 completion orders
+ok 183 - Combination 165/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.125219
+  type: 'test'
+  ...
+# Subtest: Combination 166/256: exact payload in all 24 completion orders
+ok 184 - Combination 166/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.118689
+  type: 'test'
+  ...
+# Subtest: Combination 167/256: exact payload in all 24 completion orders
+ok 185 - Combination 167/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.279502
+  type: 'test'
+  ...
+# Subtest: Combination 168/256: exact payload in all 24 completion orders
+ok 186 - Combination 168/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.159891
+  type: 'test'
+  ...
+# Subtest: Combination 169/256: exact payload in all 24 completion orders
+ok 187 - Combination 169/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.166882
+  type: 'test'
+  ...
+# Subtest: Combination 170/256: exact payload in all 24 completion orders
+ok 188 - Combination 170/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.170297
+  type: 'test'
+  ...
+# Subtest: Combination 171/256: exact payload in all 24 completion orders
+ok 189 - Combination 171/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.147473
+  type: 'test'
+  ...
+# Subtest: Combination 172/256: exact payload in all 24 completion orders
+ok 190 - Combination 172/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.117447
+  type: 'test'
+  ...
+# Subtest: Combination 173/256: exact payload in all 24 completion orders
+ok 191 - Combination 173/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.116525
+  type: 'test'
+  ...
+# Subtest: Combination 174/256: exact payload in all 24 completion orders
+ok 192 - Combination 174/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.115435
+  type: 'test'
+  ...
+# Subtest: Combination 175/256: exact payload in all 24 completion orders
+ok 193 - Combination 175/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.140933
+  type: 'test'
+  ...
+# Subtest: Combination 176/256: exact payload in all 24 completion orders
+ok 194 - Combination 176/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.186963
+  type: 'test'
+  ...
+# Subtest: Combination 177/256: exact payload in all 24 completion orders
+ok 195 - Combination 177/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.144909
+  type: 'test'
+  ...
+# Subtest: Combination 178/256: exact payload in all 24 completion orders
+ok 196 - Combination 178/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.120111
+  type: 'test'
+  ...
+# Subtest: Combination 179/256: exact payload in all 24 completion orders
+ok 197 - Combination 179/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122354
+  type: 'test'
+  ...
+# Subtest: Combination 180/256: exact payload in all 24 completion orders
+ok 198 - Combination 180/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.171959
+  type: 'test'
+  ...
+# Subtest: Combination 181/256: exact payload in all 24 completion orders
+ok 199 - Combination 181/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.120963
+  type: 'test'
+  ...
+# Subtest: Combination 182/256: exact payload in all 24 completion orders
+ok 200 - Combination 182/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.113892
+  type: 'test'
+  ...
+# Subtest: Combination 183/256: exact payload in all 24 completion orders
+ok 201 - Combination 183/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.114513
+  type: 'test'
+  ...
+# Subtest: Combination 184/256: exact payload in all 24 completion orders
+ok 202 - Combination 184/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.113431
+  type: 'test'
+  ...
+# Subtest: Combination 185/256: exact payload in all 24 completion orders
+ok 203 - Combination 185/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.117687
+  type: 'test'
+  ...
+# Subtest: Combination 186/256: exact payload in all 24 completion orders
+ok 204 - Combination 186/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.124508
+  type: 'test'
+  ...
+# Subtest: Combination 187/256: exact payload in all 24 completion orders
+ok 205 - Combination 187/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.137347
+  type: 'test'
+  ...
+# Subtest: Combination 188/256: exact payload in all 24 completion orders
+ok 206 - Combination 188/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.218921
+  type: 'test'
+  ...
+# Subtest: Combination 189/256: exact payload in all 24 completion orders
+ok 207 - Combination 189/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.140873
+  type: 'test'
+  ...
+# Subtest: Combination 190/256: exact payload in all 24 completion orders
+ok 208 - Combination 190/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.451662
+  type: 'test'
+  ...
+# Subtest: Combination 191/256: exact payload in all 24 completion orders
+ok 209 - Combination 191/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.183267
+  type: 'test'
+  ...
+# Subtest: Combination 192/256: exact payload in all 24 completion orders
+ok 210 - Combination 192/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.262316
+  type: 'test'
+  ...
+# Subtest: Combination 193/256: exact payload in all 24 completion orders
+ok 211 - Combination 193/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.121484
+  type: 'test'
+  ...
+# Subtest: Combination 194/256: exact payload in all 24 completion orders
+ok 212 - Combination 194/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.116516
+  type: 'test'
+  ...
+# Subtest: Combination 195/256: exact payload in all 24 completion orders
+ok 213 - Combination 195/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.229106
+  type: 'test'
+  ...
+# Subtest: Combination 196/256: exact payload in all 24 completion orders
+ok 214 - Combination 196/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.149786
+  type: 'test'
+  ...
+# Subtest: Combination 197/256: exact payload in all 24 completion orders
+ok 215 - Combination 197/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.248065
+  type: 'test'
+  ...
+# Subtest: Combination 198/256: exact payload in all 24 completion orders
+ok 216 - Combination 198/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.149235
+  type: 'test'
+  ...
+# Subtest: Combination 199/256: exact payload in all 24 completion orders
+ok 217 - Combination 199/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.203467
+  type: 'test'
+  ...
+# Subtest: Combination 200/256: exact payload in all 24 completion orders
+ok 218 - Combination 200/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.290598
+  type: 'test'
+  ...
+# Subtest: Combination 201/256: exact payload in all 24 completion orders
+ok 219 - Combination 201/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.13202
+  type: 'test'
+  ...
+# Subtest: Combination 202/256: exact payload in all 24 completion orders
+ok 220 - Combination 202/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.23176
+  type: 'test'
+  ...
+# Subtest: Combination 203/256: exact payload in all 24 completion orders
+ok 221 - Combination 203/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.149595
+  type: 'test'
+  ...
+# Subtest: Combination 204/256: exact payload in all 24 completion orders
+ok 222 - Combination 204/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.121934
+  type: 'test'
+  ...
+# Subtest: Combination 205/256: exact payload in all 24 completion orders
+ok 223 - Combination 205/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.216276
+  type: 'test'
+  ...
+# Subtest: Combination 206/256: exact payload in all 24 completion orders
+ok 224 - Combination 206/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.174644
+  type: 'test'
+  ...
+# Subtest: Combination 207/256: exact payload in all 24 completion orders
+ok 225 - Combination 207/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.138409
+  type: 'test'
+  ...
+# Subtest: Combination 208/256: exact payload in all 24 completion orders
+ok 226 - Combination 208/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.119421
+  type: 'test'
+  ...
+# Subtest: Combination 209/256: exact payload in all 24 completion orders
+ok 227 - Combination 209/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.116917
+  type: 'test'
+  ...
+# Subtest: Combination 210/256: exact payload in all 24 completion orders
+ok 228 - Combination 210/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.116196
+  type: 'test'
+  ...
+# Subtest: Combination 211/256: exact payload in all 24 completion orders
+ok 229 - Combination 211/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.117517
+  type: 'test'
+  ...
+# Subtest: Combination 212/256: exact payload in all 24 completion orders
+ok 230 - Combination 212/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.294175
+  type: 'test'
+  ...
+# Subtest: Combination 213/256: exact payload in all 24 completion orders
+ok 231 - Combination 213/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.132139
+  type: 'test'
+  ...
+# Subtest: Combination 214/256: exact payload in all 24 completion orders
+ok 232 - Combination 214/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.121974
+  type: 'test'
+  ...
+# Subtest: Combination 215/256: exact payload in all 24 completion orders
+ok 233 - Combination 215/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.162606
+  type: 'test'
+  ...
+# Subtest: Combination 216/256: exact payload in all 24 completion orders
+ok 234 - Combination 216/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.120713
+  type: 'test'
+  ...
+# Subtest: Combination 217/256: exact payload in all 24 completion orders
+ok 235 - Combination 217/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.562589
+  type: 'test'
+  ...
+# Subtest: Combination 218/256: exact payload in all 24 completion orders
+ok 236 - Combination 218/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.128704
+  type: 'test'
+  ...
+# Subtest: Combination 219/256: exact payload in all 24 completion orders
+ok 237 - Combination 219/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.217869
+  type: 'test'
+  ...
+# Subtest: Combination 220/256: exact payload in all 24 completion orders
+ok 238 - Combination 220/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122725
+  type: 'test'
+  ...
+# Subtest: Combination 221/256: exact payload in all 24 completion orders
+ok 239 - Combination 221/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.116666
+  type: 'test'
+  ...
+# Subtest: Combination 222/256: exact payload in all 24 completion orders
+ok 240 - Combination 222/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.157067
+  type: 'test'
+  ...
+# Subtest: Combination 223/256: exact payload in all 24 completion orders
+ok 241 - Combination 223/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.118139
+  type: 'test'
+  ...
+# Subtest: Combination 224/256: exact payload in all 24 completion orders
+ok 242 - Combination 224/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.114523
+  type: 'test'
+  ...
+# Subtest: Combination 225/256: exact payload in all 24 completion orders
+ok 243 - Combination 225/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.311
+  type: 'test'
+  ...
+# Subtest: Combination 226/256: exact payload in all 24 completion orders
+ok 244 - Combination 226/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.124838
+  type: 'test'
+  ...
+# Subtest: Combination 227/256: exact payload in all 24 completion orders
+ok 245 - Combination 227/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.117357
+  type: 'test'
+  ...
+# Subtest: Combination 228/256: exact payload in all 24 completion orders
+ok 246 - Combination 228/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.170347
+  type: 'test'
+  ...
+# Subtest: Combination 229/256: exact payload in all 24 completion orders
+ok 247 - Combination 229/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122404
+  type: 'test'
+  ...
+# Subtest: Combination 230/256: exact payload in all 24 completion orders
+ok 248 - Combination 230/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.211189
+  type: 'test'
+  ...
+# Subtest: Combination 231/256: exact payload in all 24 completion orders
+ok 249 - Combination 231/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.128364
+  type: 'test'
+  ...
+# Subtest: Combination 232/256: exact payload in all 24 completion orders
+ok 250 - Combination 232/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.163036
+  type: 'test'
+  ...
+# Subtest: Combination 233/256: exact payload in all 24 completion orders
+ok 251 - Combination 233/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.121213
+  type: 'test'
+  ...
+# Subtest: Combination 234/256: exact payload in all 24 completion orders
+ok 252 - Combination 234/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.228976
+  type: 'test'
+  ...
+# Subtest: Combination 235/256: exact payload in all 24 completion orders
+ok 253 - Combination 235/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.126942
+  type: 'test'
+  ...
+# Subtest: Combination 236/256: exact payload in all 24 completion orders
+ok 254 - Combination 236/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.139721
+  type: 'test'
+  ...
+# Subtest: Combination 237/256: exact payload in all 24 completion orders
+ok 255 - Combination 237/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.121213
+  type: 'test'
+  ...
+# Subtest: Combination 238/256: exact payload in all 24 completion orders
+ok 256 - Combination 238/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.117107
+  type: 'test'
+  ...
+# Subtest: Combination 239/256: exact payload in all 24 completion orders
+ok 257 - Combination 239/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.120001
+  type: 'test'
+  ...
+# Subtest: Combination 240/256: exact payload in all 24 completion orders
+ok 258 - Combination 240/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.171759
+  type: 'test'
+  ...
+# Subtest: Combination 241/256: exact payload in all 24 completion orders
+ok 259 - Combination 241/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.777023
+  type: 'test'
+  ...
+# Subtest: Combination 242/256: exact payload in all 24 completion orders
+ok 260 - Combination 242/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.325382
+  type: 'test'
+  ...
+# Subtest: Combination 243/256: exact payload in all 24 completion orders
+ok 261 - Combination 243/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.130196
+  type: 'test'
+  ...
+# Subtest: Combination 244/256: exact payload in all 24 completion orders
+ok 262 - Combination 244/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 1.042164
+  type: 'test'
+  ...
+# Subtest: Combination 245/256: exact payload in all 24 completion orders
+ok 263 - Combination 245/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.243317
+  type: 'test'
+  ...
+# Subtest: Combination 246/256: exact payload in all 24 completion orders
+ok 264 - Combination 246/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.24557
+  type: 'test'
+  ...
+# Subtest: Combination 247/256: exact payload in all 24 completion orders
+ok 265 - Combination 247/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.169556
+  type: 'test'
+  ...
+# Subtest: Combination 248/256: exact payload in all 24 completion orders
+ok 266 - Combination 248/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.122105
+  type: 'test'
+  ...
+# Subtest: Combination 249/256: exact payload in all 24 completion orders
+ok 267 - Combination 249/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.196156
+  type: 'test'
+  ...
+# Subtest: Combination 250/256: exact payload in all 24 completion orders
+ok 268 - Combination 250/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.15898
+  type: 'test'
+  ...
+# Subtest: Combination 251/256: exact payload in all 24 completion orders
+ok 269 - Combination 251/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.12574
+  type: 'test'
+  ...
+# Subtest: Combination 252/256: exact payload in all 24 completion orders
+ok 270 - Combination 252/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.1194
+  type: 'test'
+  ...
+# Subtest: Combination 253/256: exact payload in all 24 completion orders
+ok 271 - Combination 253/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.166731
+  type: 'test'
+  ...
+# Subtest: Combination 254/256: exact payload in all 24 completion orders
+ok 272 - Combination 254/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.160963
+  type: 'test'
+  ...
+# Subtest: Combination 255/256: exact payload in all 24 completion orders
+ok 273 - Combination 255/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.168073
+  type: 'test'
+  ...
+# Subtest: Combination 256/256: exact payload in all 24 completion orders
+ok 274 - Combination 256/256: exact payload in all 24 completion orders
+  ---
+  duration_ms: 0.143997
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 0: never creates a payload
+ok 275 - Incomplete response pattern 0: never creates a payload
+  ---
+  duration_ms: 1.779788
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 1: never creates a payload
+ok 276 - Incomplete response pattern 1: never creates a payload
+  ---
+  duration_ms: 0.067522
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 2: never creates a payload
+ok 277 - Incomplete response pattern 2: never creates a payload
+  ---
+  duration_ms: 0.048063
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 3: never creates a payload
+ok 278 - Incomplete response pattern 3: never creates a payload
+  ---
+  duration_ms: 0.041363
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 4: never creates a payload
+ok 279 - Incomplete response pattern 4: never creates a payload
+  ---
+  duration_ms: 0.154313
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 5: never creates a payload
+ok 280 - Incomplete response pattern 5: never creates a payload
+  ---
+  duration_ms: 0.057817
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 6: never creates a payload
+ok 281 - Incomplete response pattern 6: never creates a payload
+  ---
+  duration_ms: 0.171148
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 7: never creates a payload
+ok 282 - Incomplete response pattern 7: never creates a payload
+  ---
+  duration_ms: 0.042214
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 8: never creates a payload
+ok 283 - Incomplete response pattern 8: never creates a payload
+  ---
+  duration_ms: 0.057847
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 9: never creates a payload
+ok 284 - Incomplete response pattern 9: never creates a payload
+  ---
+  duration_ms: 0.039169
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 10: never creates a payload
+ok 285 - Incomplete response pattern 10: never creates a payload
+  ---
+  duration_ms: 0.033671
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 11: never creates a payload
+ok 286 - Incomplete response pattern 11: never creates a payload
+  ---
+  duration_ms: 0.032329
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 12: never creates a payload
+ok 287 - Incomplete response pattern 12: never creates a payload
+  ---
+  duration_ms: 0.034452
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 13: never creates a payload
+ok 288 - Incomplete response pattern 13: never creates a payload
+  ---
+  duration_ms: 0.031217
+  type: 'test'
+  ...
+# Subtest: Incomplete response pattern 14: never creates a payload
+ok 289 - Incomplete response pattern 14: never creates a payload
+  ---
+  duration_ms: 0.183057
+  type: 'test'
+  ...
+# Subtest: State transitions are immutable
+ok 290 - State transitions are immutable
+  ---
+  duration_ms: 0.344841
+  type: 'test'
+  ...
+# Subtest: Invalid levels and answers are rejected
+ok 291 - Invalid levels and answers are rejected
+  ---
+  duration_ms: 0.365301
+  type: 'test'
+  ...
+# Subtest: Every illustrated route leaves the same origin and never identifies a destination
+ok 292 - Every illustrated route leaves the same origin and never identifies a destination
+  ---
+  duration_ms: 0.180042
+  type: 'test'
+  ...
+1..292
+# tests 292
+# suites 0
+# pass 292
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 227.002737

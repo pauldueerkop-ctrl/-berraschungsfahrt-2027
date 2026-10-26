@@ -98,6 +98,12 @@ async function load({
     "app initialization",
   );
   await frame.contentDocument.fonts.ready;
+  // Layout tests may scroll the outer document while reaching mobile controls.
+  // Restore the frame to view so the real visibility-based animation pause is
+  // not mistaken for a broken camera or resume button in the next test.
+  frame.contentWindow.scrollTo(0, 0);
+  window.scrollTo(0, 0);
+  await new Promise((resolve) => frame.contentWindow.requestAnimationFrame(resolve));
   return frame.contentWindow.__testNetwork;
 }
 function pick(level, answer) {
@@ -371,17 +377,25 @@ async function run() {
   }
   await test("Camera transitions continuously and rapid changes settle at latest level", async () => {
     await load();
+    const vehicleStart = $('[data-route="woodland"]').getAttribute("transform");
+    await until(
+      () => $('[data-route="woodland"]').getAttribute("transform") !== vehicleStart,
+      "Visible frame starts animating",
+    );
     const start = Number($("#world-svg").dataset.scale);
     pick(3);
-    await wait(180);
+    await until(
+      () => Number($("#world-svg").dataset.scale) < start,
+      "Camera starts moving",
+    );
     const middle = Number($("#world-svg").dataset.scale);
-    assert(middle < start && middle > 0.96, "Intermediate camera transform");
+    assert(middle < start && middle > 0.86, "Intermediate camera transform");
     pick(2);
     pick(0);
     pick(1);
     pick(3);
     await until(
-      () => $("#world-svg").dataset.scale === "0.9600",
+      () => $("#world-svg").dataset.scale === "0.8600",
       "Final camera scale",
       2500,
     );
@@ -402,16 +416,15 @@ async function run() {
       "Paused position",
     );
     $("#motion-toggle").click();
-    await wait(180);
-    assert(
-      $('[data-route="woodland"]').getAttribute("transform") !== old,
+    await until(
+      () => $('[data-route="woodland"]').getAttribute("transform") !== old,
       "Motion resumed",
     );
   });
   await test("Reduced-motion JS policy: immediate camera and paused vehicles", async () => {
     await load({ reduced: true });
     pick(3);
-    equal($("#world-svg").dataset.scale, "0.9600", "No camera tween");
+    equal($("#world-svg").dataset.scale, "0.8600", "No camera tween");
     equal(
       $("#motion-toggle").getAttribute("aria-pressed"),
       "true",
@@ -448,7 +461,7 @@ async function run() {
       "Modules loaded",
     );
     const image = new frame.contentWindow.Image();
-    image.src = new URL("repo-test/assets/illustrations/world.webp", rootURL);
+    image.src = new URL("repo-test/assets/illustrations/world-comic.webp", rootURL);
     await image.decode();
     assert(image.naturalWidth >= 1500, "Illustration loaded");
   });

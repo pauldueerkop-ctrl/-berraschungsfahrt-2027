@@ -270,17 +270,41 @@ for (const [width, height] of [
   });
 }
 test("Camera eases between levels; motion can be paused", async ({ page }) => {
+  const initial = Number(await page.locator("#world-svg").getAttribute("data-scale"));
   await pick(page, 3);
   await expect
     .poll(async () =>
       Number(await page.locator("#world-svg").getAttribute("data-scale")),
     )
-    .toBeCloseTo(0.96, 2);
+    .toBeCloseTo(0.86, 2);
+  const finalScale = Number(await page.locator("#world-svg").getAttribute("data-scale"));
+  expect(initial / finalScale).toBeGreaterThan(3.5);
   await page.locator("#motion-toggle").click();
   const vehicle = page.locator('[data-route="woodland"]');
   const transform = await vehicle.getAttribute("transform");
   await page.waitForTimeout(180);
   expect(await vehicle.getAttribute("transform")).toBe(transform);
+});
+test("Comic effects follow the vehicles and freeze with the pause control", async ({ page }) => {
+  await pick(page, 3);
+  const trail = page.locator('[data-trail-route="air-west"] .contrail-line').first();
+  await expect(trail).toHaveAttribute("d", /^M.+L/);
+  const firstTrail = await trail.getAttribute("d");
+  await expect.poll(() => trail.getAttribute("d")).not.toBe(firstTrail);
+  const horn = page.locator('[data-route="woodland"] .comic-honk');
+  await expect.poll(async () => Number(await horn.getAttribute("opacity")), { timeout: 8000 }).toBeGreaterThan(.5);
+  await page.locator("#motion-toggle").click();
+  const scene = await page.locator("#vehicles").innerHTML();
+  const frozenTrail = await trail.getAttribute("d");
+  await page.waitForTimeout(250);
+  expect(await page.locator("#vehicles").innerHTML()).toBe(scene);
+  expect(await trail.getAttribute("d")).toBe(frozenTrail);
+  // Cartoon characters stay readable in the widest view, including on phones.
+  const width = (await page.locator('[data-route="woodland"] .vehicle-sprite').boundingBox()).width;
+  expect(width).toBeGreaterThan(35);
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect((await page.locator('[data-route="woodland"] .vehicle-sprite').boundingBox()).width).toBeGreaterThan(22);
+  expect(requests).toEqual([]);
 });
 test("Reduced motion removes camera tweening and ambient animations", async ({
   page,
@@ -290,7 +314,7 @@ test("Reduced motion removes camera tweening and ambient animations", async ({
   await pick(page, 3);
   await expect(page.locator("#world-svg")).toHaveAttribute(
     "data-scale",
-    "0.9600",
+    "0.8600",
   );
   await expect(page.locator("#motion-toggle")).toHaveAttribute(
     "aria-pressed",

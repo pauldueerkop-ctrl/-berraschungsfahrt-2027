@@ -14,11 +14,13 @@ Dann **http://localhost:3000** öffnen. Für die Website sind **kein Installiere
 
 ## GitHub Pages
 
-1. Den **Inhalt des Ordners `trau-dich`** ins Repository übernehmen. `index.html` muss direkt im Repository-Hauptverzeichnis liegen, ohne zusätzlichen Zwischenordner. Die leere `.nojekyll`-Datei mitnehmen.
-2. Auf `main` hochladen bzw. committen und pushen.
-3. **Settings → Pages → Source: Deploy from a branch** auswählen.
-4. **Branch: `main` · Ordner: `/ (root)` → Save**.
-5. Die anschließend von GitHub angezeigte Website-URL öffnen.
+### Die bereits veröffentlichte Seite aktualisieren
+
+Die ZIP behält den Ordnernamen **`trau-dich`** bei. Den entpackten Ordner auf derselben Ebene wie den bisherigen Ordner im Repository hochladen; dadurch werden gleichnamige Dateien aktualisiert. Die vorhandene Weiterleitung `index.html` ganz oben im Repository bleibt bestehen. Die Pages-Einstellungen und der Branch müssen für diese Grafikrevision nicht geändert werden.
+
+### Eine neue Veröffentlichung
+
+Der Inhalt von `trau-dich` kann direkt im Repository-Hauptverzeichnis liegen. Alternativ bleibt der ganze Ordner im Repository; dann liegt die Website unter dem Unterpfad `/trau-dich/`. Eine vorhandene Weiterleitung im Hauptverzeichnis kann auf diesen Unterpfad zeigen. Pages verwendet weiterhin den Branch `main` mit `/ (root)`; `main/trau-dich` ist kein Branch.
 
 Keine Build-Pipeline, kein Worker und kein eigenes Backend. Relative Asset-Pfade unterstützen Repository-Unterpfade.
 
@@ -44,7 +46,7 @@ Die Auswahl bleibt beim Budgetwechsel erhalten, wird aber beim Neuladen zurückg
 | `js/world.js` | Kamerafahrten, Routen und Verkehrsmittel |
 | `assets/` | Originalillustration, Schrift und Favicon |
 
-Die Welt besteht aus einer transparenten Originalillustration mit separaten animierten SVG-Ebenen. Ein Pausenknopf und `prefers-reduced-motion` berücksichtigen reduzierte Bewegung. Verkehrsmittel und Orte sind rein illustrativ.
+Die neue Comicwelt besteht aus einer transparenten Illustration mit separaten animierten SVG-Ebenen. Der Zoom zeigt zwischen erster und letzter Stufe rund 15-mal so viel Fläche. Größere Fahrzeuge federn, ihre Räder drehen sich; Busse zeigen Hupzeichen, Züge Dampfwölkchen und Flugzeuge Kondensstreifen. Ein Pausenknopf und `prefers-reduced-motion` berücksichtigen reduzierte Bewegung. Verkehrsmittel und Orte sind rein illustrativ. Texte, Budgetwerte, Formularlogik und Formspree-Endpunkt bleiben unverändert.
 
 ## Tests
 

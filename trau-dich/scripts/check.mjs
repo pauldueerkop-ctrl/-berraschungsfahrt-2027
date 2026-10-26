@@ -46,7 +46,7 @@ if (
 )
   errors.push("Unexpected personal-data field");
 await stat(path.join(root, ".nojekyll"));
-const image = await stat(path.join(root, "assets/illustrations/world.webp"));
+const image = await stat(path.join(root, "assets/illustrations/world-comic.webp"));
 if (image.size > 2 * 1024 * 1024) errors.push("World asset exceeds 2 MiB");
 if (errors.length) {
   console.error(errors.join("\n"));

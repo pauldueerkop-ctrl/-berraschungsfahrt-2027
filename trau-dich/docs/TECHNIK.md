@@ -14,11 +14,9 @@ Dann `http://localhost:3000` öffnen. Für die Website selbst ist **kein `npm in
 
 ## In dein GitHub-Repository übernehmen
 
-1. ZIP entpacken. Den **Inhalt des Ordners `trau-dich`** in das Repository kopieren. `index.html` muss direkt im Repository-Hauptverzeichnis liegen, nicht in einem zusätzlichen Zwischenordner.
-2. Dateien auf den Branch `main` hochladen bzw. committen und pushen. Auch die leere Datei `.nojekyll` mitnehmen.
-3. Im Repository: **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
-4. **Branch: `main`, Ordner: `/ (root)`**, dann **Save**.
-5. Die anschließend von GitHub angezeigte Website-URL öffnen.
+Für die bereits laufende Seite: Den entpackten Ordner `trau-dich` auf derselben Repository-Ebene wie bisher hochladen und die vorhandenen Dateien aktualisieren. Die Weiterleitung im Repository-Hauptverzeichnis beibehalten. Der Branch und die vorhandenen Pages-Einstellungen bleiben gleich.
+
+Bei einer neuen Veröffentlichung sind beide Strukturen möglich: Projektdateien direkt im Repository-Hauptverzeichnis oder im Unterordner `trau-dich/`. Im zweiten Fall die entsprechende Unterpfad-URL öffnen oder eine Weiterleitung im Hauptverzeichnis verwenden. Details stehen in `README.md`.
 
 Kein Build-Befehl, kein `dist`-Ordner, kein Worker und kein eigenes Backend. Alle lokalen Verweise sind relativ und funktionieren auch unter `https://DEIN-NAME.github.io/DEIN-REPOSITORY/`.
 
@@ -60,7 +58,7 @@ https://formspree.io/f/myeeepoe
 
 Die Originalillustration ist als transparente WebP-Datei lokal eingebunden. In einer SVG-Szene liegen darüber acht animierte Routen mit Bus, Auto, Zug und Flugzeug. Sämtliche Routen beginnen am selben München-Marker. Fahrzeuge blenden an ihrem Ende in Wolken aus; keines markiert ein tatsächliches Reiseziel.
 
-Vier Kamerastufen erweitern fließend den Ausschnitt derselben Landschaft. Die Verkehrsmittel illustrieren Möglichkeiten, keine Leistungen der jeweiligen Budgetstufe. Die Karte enthält keine echten Ortsnamen außer München.
+Vier Kamerastufen (3,30 / 2,15 / 1,38 / 0,86) erweitern fließend den Ausschnitt derselben Landschaft über etwa 1,45 Sekunden. Die letzte Ansicht zeigt rund 15-mal so viel Fläche wie die erste. Fahrzeuge bleiben durch teilweise Gegenskalierung deutlich sichtbar. Busse haben pulsierende Hupstriche, Züge Dampfwolken, Flugzeuge zwei entlang der bereits geflogenen Strecke ausblendende Kondensstreifen. Räder drehen sich und die Karosserien federn. Effekte sind lautlos und verwenden dieselbe pausierbare Animationsuhr. Die Verkehrsmittel illustrieren Möglichkeiten, keine Leistungen der jeweiligen Budgetstufe. Die Karte enthält keine echten Ortsnamen außer München.
 
 | Datei | Zuständigkeit |
 | --- | --- |
@@ -70,7 +68,7 @@ Vier Kamerastufen erweitern fließend den Ausschnitt derselben Landschaft. Die V
 | `js/submit.js` | Formspree-POST, Timeout und Fehlermeldungen |
 | `js/app.js` | Formularzustand, Bedienung, Fokus und Dialoge |
 | `js/world.js` | Kamerafahrt, Routen, Fahrzeuge, Pausierung |
-| `assets/illustrations/world.webp` | Lokal gespeicherte Originalillustration |
+| `assets/illustrations/world-comic.webp` | Lokal gespeicherte Comic-Illustration |
 | `assets/fonts/` | Lokal eingebundene Schrift mit Lizenz |
 | `tests/` | Unit-, Browser- und Playwright-Tests |
 | `docs/TESTBERICHT.md` | Tatsächlich ausgeführte Prüfungen und Grenzen |
